@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\API.csproj": {}
+    "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\API.csproj": {
+    "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\obj\\",
+        "outputPath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",

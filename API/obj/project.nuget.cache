@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SD9KClMuCOVC/HXLXrM+OIUybzFL4KJ3Zfus6rMqOgnmmMbX1im5kySae6YSHlZDe5Hqt1ac2wZrwdvb/gPp9g==",
+  "dgSpecHash": "UpZIJVKcqocHElf46OkL+WpcLZXCbFCrmvQuKwDReuFx+esflChGu8a09gzOpCVswiTH445dM/Ha7eWHRjzHfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Max\\Desktop\\UdemyTutorial\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Max\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
