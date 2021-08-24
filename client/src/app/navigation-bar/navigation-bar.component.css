@@ -1,0 +1,8 @@
+.dropdown a {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width:fit-content;
+    left: -120% !important;
+}

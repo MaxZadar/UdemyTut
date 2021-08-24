@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup" (ngSubmit)="register()" autocomplete="off">
+    <h2 class="text-center text-primary">Sign Up</h2>
+    <hr>
+    <div class="form-group">
+        <input class="form-control" type="text" formControlName="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password" formControlName="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password" formControlName="repeat_password" placeholder="Repeat Password">
+    </div>
+    <div class="form-group text-center">
+        <button type="submit" class="btn btn-success mr-2">Register</button>
+        <button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
+    </div>
+</form>
