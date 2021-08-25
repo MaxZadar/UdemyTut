@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { User } from '../_models/user';
 import { AccountService } from '../_services/account.service';
@@ -13,27 +15,35 @@ export class NavigationBarComponent implements OnInit {
 
   formGroup: FormGroup;
 
-  constructor(private readonly formBuilder: FormBuilder, public accountService: AccountService) {
+  constructor(
+    private readonly formBuilder: FormBuilder,
+    public accountService: AccountService,
+    private router: Router,
+    private toastrService: ToastrService
+  ) {
     this.formGroup = this.formBuilder.group({
       username: [''],
       password: ['']
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   login() {
     this.accountService.login(this.formGroup.value).subscribe(
       data => {
-        console.log("Logged In Successfully!");
+        this.toastrService.success("Logged in Successfully!")
+        this.router.navigateByUrl('/members')
       }, error => {
-        console.error(error.error);
+        this.toastrService.error(error.error)
       });
   }
 
   logout() {
     this.accountService.logout();
+    this.toastrService.success("Logged out Successfully!")
     this.formGroup.reset();
+    this.router.navigate(["/"]);
   }
 
 }

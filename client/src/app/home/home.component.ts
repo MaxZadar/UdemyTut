@@ -10,23 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
-  user: string | null = "";
 
 
   constructor(private http: HttpClient, public accountService: AccountService) { }
 
   ngOnInit(): void {
-    this.getUser();
   }
 
   toggleRegisterMode() {
     this.registerMode = !this.registerMode;
-  }
-
-  getUser() {
-    this.accountService.currentUser$.subscribe(data => {
-      this.user = data?.username || null;
-    });
   }
 
 }
