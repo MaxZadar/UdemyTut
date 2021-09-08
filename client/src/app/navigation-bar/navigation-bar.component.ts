@@ -34,8 +34,6 @@ export class NavigationBarComponent implements OnInit {
       data => {
         this.toastrService.success("Logged in Successfully!")
         this.router.navigateByUrl('/members')
-      }, error => {
-        this.toastrService.error(error.error)
       });
   }
 
