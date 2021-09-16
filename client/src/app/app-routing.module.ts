@@ -20,7 +20,7 @@ const routes: Routes = [
       { path: "messages", component: MessagesComponent, canActivate: [AuthGuard] },
       { path: "lists", component: ListsComponent, canActivate: [AuthGuard] },
       { path: "members", component: MemberListComponent, canActivate: [AuthGuard] },
-      { path: "members/:id", component: MemberDetailComponent, canActivate: [AuthGuard] },
+      { path: "members/:username", component: MemberDetailComponent, canActivate: [AuthGuard] },
     ]
   },
   { path: "errors", component: TestErrorsComponent},

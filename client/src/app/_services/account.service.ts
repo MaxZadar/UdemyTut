@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { User } from './../_models/user';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -8,7 +9,7 @@ import { BehaviorSubject, ReplaySubject } from 'rxjs';
   providedIn: 'root'
 })
 export class AccountService {
-  private baseUrl: string = "https://localhost:5001/api/";
+  private baseUrl: string = environment.apiUrl;
   private currentUserSource = new BehaviorSubject<User | null>(null);
 
   currentUser$ = this.currentUserSource.asObservable();
